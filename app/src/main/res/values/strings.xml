@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">_World</string>
+    <!--탭바-->
+    <string name="group_text">아지트</string>
+    <string name="my_text">MY</string>
+    <string name="chat_text">귓속말</string>
+    <string name="notice_text">알림</string>
+    <string name="search_text">검색</string>
+    <!--입력힌트-->
+    <string name="chat_input_hint_text">글을 입력하세요</string>
+    <string name="title_input_hint_text">제목</string>
+    <!--글쓰기 옵션-->
+    <string name="upload_text">게시하기</string>
+    <string name="save_text">임시저장</string>
+    <string name="file_upload_text">파일첨부</string>
+    <string name="gallery_text">갤러리</string>
+    <string name="text_text">텍스트</string>
+    <string name="sort_text">정렬</string>
+    <string name="thick_text">굵기</string>
+    <string name="colors_text">색상</string>
+    <string name="slope_text">기울기</string>
+    <string name="strike_through_text">취소선</string>
+    <string name="underline_text">밑줄</string>
+    <!--게시 옵션-->
+    <string name="upload_user_text">게시 대상</string>
+    <string name="show_user_text">공개 대상</string>
+    <string name="all_show_text">전부 공개</string>
+    <string name="user_show_text">공개 대상</string>
+    <string name="not_show_text">비공개</string>
+    <string name="cancle_text">취소</string>
+    <string name="upload2_text">게시</string>
+    <string name="save_question_text">임시저장 하시겠습니까?</string>
+    <string name="yse_text">네</string>
+    <string name="no_text">아니오</string>
+    <!--MY 프로필-->
+    <string name="my_profile_text">MY 프로필</string>
+    <string name="my_name_text">이름</string>
+    <string name="my_age_text">나이</string>
+    <string name="my_gender_text">성별</string>
+    <string name="my_interest_text">관심사</string>
+    <string name="my_pr_text">자기소개</string>
+    <string name="my_interest_text">내가 쓴 글</string>
+    <string name="my_interest_text">+전체보기</string>
+    <string name="my_interest_text">환경설정</string>
+    <string name="my_interest_text">공지사항</string>
+    <string name="my_interest_text">PC버전</string>
+    <string name="my_interest_text">고객센터</string>
+</resources>
