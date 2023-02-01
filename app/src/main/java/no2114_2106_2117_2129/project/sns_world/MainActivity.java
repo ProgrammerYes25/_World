@@ -8,7 +8,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        // Y - 커밋 확인
+        // Y - 커밋 확인용
         
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
