@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme._World">
         <activity
+            android:name=".WritingPageActivity"
+            android:exported="true" />
+        <activity
             android:name=".MypageModifyActivity"
             android:exported="false">
             <meta-data
