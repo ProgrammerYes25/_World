@@ -12,6 +12,7 @@
     <!--글쓰기 옵션-->
     <string name="upload_text">게시하기</string>
     <string name="save_text">임시저장</string>
+    <string name="camera_text">카메라</string>
     <string name="file_upload_text">파일첨부</string>
     <string name="gallery_text">갤러리</string>
     <string name="text_text">텍스트</string>

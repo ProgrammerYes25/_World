@@ -7,10 +7,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".WritingPageActivity">
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1">
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_weight="1">-->
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -59,7 +59,7 @@
                 android:hint="@string/chat_input_hint_text"
                 android:background="@drawable/writing_edit_text"/>
         </LinearLayout>
-    </ScrollView>
+<!--    </ScrollView>-->
 
     <RelativeLayout
         android:layout_width="match_parent"
