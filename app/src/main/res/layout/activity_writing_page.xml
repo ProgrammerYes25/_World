@@ -32,14 +32,18 @@
                 android:layout_centerVertical="true"
                 android:text="게시하기"
                 android:textColor="@color/black"/>
+
             <TextView
                 android:id="@+id/save_text_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
                 android:layout_toLeftOf="@id/upload_text_view"
-                android:layout_margin="5dp"
                 android:text="임시저장"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black" />
         </RelativeLayout>
         <LinearLayout
             android:layout_width="match_parent"

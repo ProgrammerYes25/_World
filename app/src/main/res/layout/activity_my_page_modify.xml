@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black_50"
+    tools:context=".MypageModifyActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+        <!-- Y - "MY 프로필" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_profile_text"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/black"
+            android:textSize="20dp"/>
+
+        <!-- Y - 수정하기 버튼 -->
+        <TextView
+            android:id="@+id/my_profile_modify_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:padding="3dp"
+            android:background="@color/black_200"
+            android:textColor="@color/black"
+            android:text="@string/my_profile_modify"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+        <!-- Y - 아바타 -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mypage_avatar"/>
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_marginStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Y - 이름 -->
+            <TextView
+                android:id="@+id/name_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:padding="3dp"
+                android:textColor="@color/black"
+                android:text="@string/my_name_text"
+                android:textSize="15dp"/>
+
+            <EditText
+                android:id="@+id/name_edit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/name_text_view"
+                android:layout_marginStart="24dp"
+                android:padding="3dp"
+                android:background="@color/black_200"
+                android:textColor="@color/black"
+                android:text="홍길동"
+                android:textSize="15dp"/>
+
+            <!-- Y - 나이 -->
+            <TextView
+                android:id="@+id/age_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name_text_view"
+                android:layout_marginTop="5dp"
+                android:padding="3dp"
+                android:textColor="@color/black"
+                android:text="@string/my_age_text"
+                android:textSize="15dp"/>
+
+            <EditText
+                android:id="@+id/age_edit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/age_text_view"
+                android:layout_below="@id/name_edit_text"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="5dp"
+                android:padding="3dp"
+                android:background="@color/black_200"
+                android:textColor="@color/black"
+                android:text="00"
+                android:textSize="15dp"/>
+
+            <!-- Y - 관심사 -->
+            <TextView
+                android:id="@+id/interest_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/age_text_view"
+                android:layout_marginTop="5dp"
+                android:padding="3dp"
+                android:textColor="@color/black"
+                android:text="@string/my_interest_text"
+                android:textSize="15dp"/>
+
+            <EditText
+                android:id="@+id/interest_edit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/interest_text_view"
+                android:layout_below="@id/age_edit_text"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:padding="3dp"
+                android:background="@color/black_200"
+                android:textColor="@color/black"
+                android:text="없음"
+                android:textSize="15dp"/>
+
+            <!-- Y - 성별 -->
+           <TextView
+                android:id="@+id/gender_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name_edit_text"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="5dp"
+                android:padding="3dp"
+                android:textColor="@color/black"
+                android:text="@string/my_gender_text"
+                android:textSize="15dp"/>
+
+            <Spinner
+                android:id="@+id/gender_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name_edit_text"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@id/gender_text_view"
+                android:background="@color/black_200"/>
+
+            <!-- Y - 자기소개 -->
+            <TextView
+                android:id="@+id/my_profile_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/interest_text_view"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:text="@string/my_pr_text" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/my_profile_text_view"
+                android:layout_marginTop="3dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:background="@color/black_200"
+                    android:layout_marginTop="3dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="안녕하세요"
+                    android:textSize="13dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- Y - 내가 쓴 글 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/white">
+
+        <!-- Y - 내가 쓴 글 -->
+        <TextView
+            android:id="@+id/my_writing_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:text="@string/my_writing_text"
+            android:textSize="15dp"/>
+
+        <!-- Y - 전체보기 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:text="@string/all_view_text"
+            android:textSize="15dp"/>
+
+        <!-- Y - 내가 쓴 글 목록 -->
+<!--        <ListView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/my_writing_text_view"-->
+<!--            android:padding="10dp"/>-->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:padding="30dp"
+        android:background="@color/white">
+
+        <!-- Y - 환경설정 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/setting_text"
+            android:textSize="15dp"/>
+
+        <!-- Y - 공지사항 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:text="@string/notice_list_text"
+            android:textSize="15dp"/>
+
+        <!-- Y - PC버전 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:text="@string/PC_text"
+            android:textSize="15dp"/>
+
+        <!-- Y - 고객센터 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:text="@string/service_center_text"
+            android:textSize="15dp"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
