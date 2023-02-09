@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GroupNoticeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp">
+        <!-- Y - 그룹 알림(선택) -->
+        <TextView
+            android:id="@+id/group_notice_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20sp"
+            android:textColor="@color/black"
+            android:text="그룹 알림"
+            android:textSize="20dp"/>
+
+        <!-- Y - MY 알림(미선택) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20sp"
+            android:layout_toRightOf="@+id/group_notice_text_view"
+            android:text="MY 알림"
+            android:textSize="20dp"/>
+
+        <!-- Y - 모두 지우기 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:padding="7dp"
+            android:background="@color/black_400"
+            android:textColor="@color/black"
+            android:text="모두 지우기"
+            android:textSize="13sp"/>
+    </RelativeLayout>
+
+    <!-- Y - 그룹 알림 리스트 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="오늘"/>
+
+        <ListView
+            android:id="@+id/group_notice_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>
