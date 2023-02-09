@@ -6,9 +6,10 @@
         <entry key="..\:/Android1/_World/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1785" />
         <entry key="..\:/Android1/_World/app/src/main/res/drawable/writing_edit_text.xml" value="0.1" />
         <entry key="..\:/Android1/_World/app/src/main/res/drawable/writing_title_edit_text.xml" value="0.1785" />
+        <entry key="..\:/Android1/_World/app/src/main/res/layout/activity_group_notice.xml" value="0.2128623188405797" />
         <entry key="..\:/Android1/_World/app/src/main/res/layout/activity_main.xml" value="0.38697916666666665" />
         <entry key="..\:/Android1/_World/app/src/main/res/layout/activity_mypagemodify.xml" value="0.38697916666666665" />
-        <entry key="..\:/Android1/_World/app/src/main/res/layout/activity_writing_page.xml" value="0.1" />
+        <entry key="..\:/Android1/_World/app/src/main/res/layout/activity_writing_page.xml" value="0.4466666666666667" />
         <entry key="..\:/Android1/_World/app/src/main/res/menu/writing_menu.xml" value="0.346875" />
       </map>
     </option>
@@ -22,7 +23,7 @@
   <component name="VisualizationToolProject">
     <option name="state">
       <ProjectState>
-        <option name="scale" value="0.13333333333333333" />
+        <option name="scale" value="0.4466666666666667" />
       </ProjectState>
     </option>
   </component>
