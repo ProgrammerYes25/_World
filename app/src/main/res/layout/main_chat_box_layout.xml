@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"/>
+    <TextView
+        android:id="@+id/msg_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_text_view"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:text="내용 자리"
+        />
+    <TextView
+        android:id="@+id/time_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/msg_text_view"
+        android:layout_alignBottom="@+id/msg_text_view"
+        android:textSize="12sp"
+        android:text="17:13"/>
+</RelativeLayout>
