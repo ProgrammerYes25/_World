@@ -3,16 +3,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 <!--G - 탐색-->
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        >
+        android:padding="15dp"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical">
+
         <EditText
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:hint="검색어를 입력하세요"/>
+            android:id="@+id/et"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:layout_marginLeft="30dp"
+            android:maxLines="3"
+            android:background="#E4E7EC"
 
+            />
 
-    </LinearLayout>
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:textColor="#000000"
+            android:backgroundTint="#D0D5DD"
+            android:layout_marginLeft="320dp"
+            android:onClick="clickSend"/>
+
+    </RelativeLayout>
 </LinearLayout>
