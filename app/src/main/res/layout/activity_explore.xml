@@ -7,7 +7,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="15dp"
-        android:background="#FFFFFF"
+        android:background="@color/white"
         android:gravity="center_vertical">
 
         <EditText
@@ -19,15 +19,15 @@
             android:padding="10dp"
             android:layout_marginLeft="30dp"
             android:maxLines="3"
-            android:background="#E4E7EC"
+            android:background="@color/black_200"
 
             />
 
         <Button
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:textColor="#000000"
-            android:backgroundTint="#D0D5DD"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/black_300"
             android:layout_marginLeft="320dp"
             android:onClick="clickSend"/>
 

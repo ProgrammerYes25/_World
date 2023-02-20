@@ -14,9 +14,9 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="#ffffff"
+            android:backgroundTint="@color/white"
             android:text="<"
-            android:textColor="#000000"
+            android:textColor="@color/black"
             />
 
     </LinearLayout>
@@ -35,7 +35,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:padding="15dp"
-        android:background="#FFFFFF"
+        android:background="@color/white"
         android:gravity="center_vertical">
 
         <EditText
@@ -47,7 +47,7 @@
             android:padding="10dp"
             android:layout_marginLeft="30dp"
             android:maxLines="3"
-            android:background="#E4E7EC"
+            android:background="@color/black_200"
 
             />
 
@@ -55,8 +55,8 @@
             android:layout_width="80dp"
             android:layout_height="40dp"
             android:text="카메라"
-            android:textColor="#000000"
-            android:backgroundTint="#D0D5DD"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/black_300"
             android:layout_marginLeft="40dp"
             android:onClick="clickSend"/>
 
@@ -64,8 +64,8 @@
             android:layout_width="65dp"
             android:layout_height="40dp"
             android:text="전송"
-            android:textColor="#000000"
-            android:backgroundTint="#D0D5DD"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/black_300"
             android:layout_marginLeft="300dp"
             android:onClick="clickSend"/>
 
