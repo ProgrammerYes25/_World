@@ -47,4 +47,6 @@
     <string name="notice_list_text">공지사항</string>
     <string name="PC_text">PC버전</string>
     <string name="service_center_text">고객센터</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
