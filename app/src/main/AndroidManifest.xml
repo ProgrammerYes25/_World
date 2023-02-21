@@ -12,6 +12,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme._World">
         <activity
+            android:name=".MyNoticeActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MypageListActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".GroupNoticeActivity"
             android:exported="false">
             <meta-data
@@ -31,7 +45,6 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -5,27 +5,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/black_50"
     tools:context=".GroupNoticeActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20sp">
-        <!-- Y - 그룹 알림(선택) -->
+        <!-- Y - 그룹 알림(미선택) -->
         <TextView
             android:id="@+id/group_notice_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/black"
             android:text="그룹 알림"
             android:textSize="20dp"/>
 
-        <!-- Y - MY 알림(미선택) -->
+        <!-- Y - MY 알림(선택) -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20sp"
             android:layout_toRightOf="@+id/group_notice_text_view"
+            android:textColor="@color/black"
             android:text="MY 알림"
             android:textSize="20dp"/>
 
