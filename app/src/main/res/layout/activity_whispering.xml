@@ -70,6 +70,4 @@
             android:onClick="clickSend"/>
 
     </RelativeLayout>
-
-
 </LinearLayout>
