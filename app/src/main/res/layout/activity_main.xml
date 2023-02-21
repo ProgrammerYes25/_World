@@ -232,12 +232,4 @@
             </LinearLayout>
         </FrameLayout>
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="13"
-        android:background="@color/black_300"
-        android:focusable="false"
-        android:focusableInTouchMode="false">
-    </LinearLayout>
 </LinearLayout>

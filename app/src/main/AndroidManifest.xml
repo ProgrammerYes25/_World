@@ -26,6 +26,9 @@
                 android:value="" />
         </activity>
         <activity
+            android:name=".GroupListPageActivity"
+            android:exported="false" />
+        <activity
             android:name=".GroupNoticeActivity"
             android:exported="false">
             <meta-data
