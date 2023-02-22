@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/black_50"
-    tools:context=".GroupNoticeActivity">
+    tools:context=".GroupNoticeFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"

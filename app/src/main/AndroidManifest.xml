@@ -29,7 +29,7 @@
             android:name=".GroupListPageActivity"
             android:exported="false" />
         <activity
-            android:name=".GroupNoticeActivity"
+            android:name=".GroupNoticeFragment"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
