@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     BottomNavigationView mainBottomNavigationView;
     // C - 플레그먼트 선언
     // c - 순서대로 아지트, MY페이지, 알림, 귓속말, 검색
-    Fragment groupMainPageFragment, myPageModifyFragment, groupNoticeFragment, whisperingListFragment;
+    Fragment groupMainPageFragment, myPageModifyFragment, groupNoticeFragment, whisperingListFragment, SearchPageFragment;
     LinearLayout topLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         // C - 플레그먼트 정의
+        SearchPageFragment = new SearchPageFragment();
         groupMainPageFragment = new GroupMainPageFragment();
         myPageModifyFragment = new MypageModifyFragment();
         groupNoticeFragment = new GroupNoticeFragment();
@@ -47,6 +48,10 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()){
+                case R.id.search_item:
+                    topLayout.setVisibility(View.GONE);
+                    getSupportFragmentManager().beginTransaction().replace(R.id.main_frame_layout, SearchPageFragment).commitAllowingStateLoss();
+                    break;
                 case R.id.notice_item:
                     topLayout.setVisibility(View.GONE);
                     getSupportFragmentManager().beginTransaction().replace(R.id.main_frame_layout, groupNoticeFragment).commitAllowingStateLoss();
@@ -67,5 +72,3 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 }
- /*       LinearLayout layout = findViewById(R.id.top_linear_layout);
-        layout.setVisibility(View.GONE);*/
