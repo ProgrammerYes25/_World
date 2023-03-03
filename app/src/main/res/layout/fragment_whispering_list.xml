@@ -5,4 +5,69 @@
     android:layout_height="match_parent"
     tools:context=".WhisperingListFragment">
 
+    <!--G - 귓속말-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/et"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:layout_marginLeft="20dp"
+            android:maxLines="3"
+            android:background="@color/black_200"
+            />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/black_300"
+            android:layout_marginLeft="320dp"
+            android:onClick="clickSend"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="개인"
+                android:textSize="48px"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/white"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_marginLeft="80dp"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="그룹"
+                android:textSize="48px"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/white"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_marginLeft="50dp"
+                />
+
+        </LinearLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp" />
+
+    </RelativeLayout>
+
 </LinearLayout>

@@ -5,4 +5,34 @@
     android:layout_height="match_parent"
     tools:context=".SearchPageFragment">
 
+    <!--G - 탐색-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/et"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:layout_marginLeft="15dp"
+            android:maxLines="3"
+            android:background="@color/black_200"
+            />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/black_300"
+            android:layout_marginLeft="300dp"
+            android:onClick="clickSend"/>
+
+    </RelativeLayout>
+
 </LinearLayout>

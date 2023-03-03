@@ -11,6 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme._World">
+
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/back_et_mymsgbox" />
+
         <activity
             android:name=".MyNoticeActivity"
             android:exported="false">

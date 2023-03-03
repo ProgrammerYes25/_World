@@ -19,10 +19,9 @@
             android:layout_weight="1"
             android:inputType="textMultiLine"
             android:padding="10dp"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="20dp"
             android:maxLines="3"
             android:background="@color/black_200"
-
             />
 
         <Button
@@ -68,8 +67,5 @@
             android:layout_marginTop="100dp" />
 
     </RelativeLayout>
-
-
-
 
 </LinearLayout>

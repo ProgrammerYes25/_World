@@ -17,10 +17,9 @@
             android:layout_weight="1"
             android:inputType="textMultiLine"
             android:padding="10dp"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="15dp"
             android:maxLines="3"
             android:background="@color/black_200"
-
             />
 
         <Button
@@ -28,7 +27,7 @@
             android:layout_height="40dp"
             android:textColor="@color/black"
             android:backgroundTint="@color/black_300"
-            android:layout_marginLeft="320dp"
+            android:layout_marginLeft="300dp"
             android:onClick="clickSend"/>
 
     </RelativeLayout>
