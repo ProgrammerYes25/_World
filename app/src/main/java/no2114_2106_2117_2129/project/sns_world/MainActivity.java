@@ -3,6 +3,8 @@ package no2114_2106_2117_2129.project.sns_world;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -18,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
     // C - 플레그먼트 선언
     // c - 순서대로 아지트, MY페이지, 알림, 귓속말, 검색
     Fragment groupMainPageFragment, myPageModifyFragment, groupNoticeFragment, whisperingListFragment, SearchPageFragment;
+    // C - FragmentTransaction 선언
+    FragmentTransaction fragmentTransaction;
     LinearLayout topLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,12 +41,18 @@ public class MainActivity extends AppCompatActivity {
 
         // C - 네비게이션 버튼 정의
         mainBottomNavigationView = findViewById(R.id.main_bottom_navigation_view);
-
+        // C - FragmentTransaction 정의
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentTransaction  = fragmentManager.beginTransaction();
         // C - 플레그 먼트 띄우기
         getSupportFragmentManager().beginTransaction().add(R.id.main_frame_layout, groupMainPageFragment).commitAllowingStateLoss();
 
         // C - 네비게이션 버튼 기능구현
         mainBottomNavigationView.setOnNavigationItemSelectedListener( mainNavigationItemSelectedListener);
+    }
+    public void replaceFragment(Fragment fragment) {
+        // C - Fragment에서 Fragment로 전환 메소드
+        fragmentTransaction.replace(R.id.main_frame_layout, fragment).commit();      //c- Fragment로 사용할 MainActivity내의 layout공간을 선택
     }
     BottomNavigationView.OnNavigationItemSelectedListener  mainNavigationItemSelectedListener = new BottomNavigationView.OnNavigationItemSelectedListener() {
         @Override

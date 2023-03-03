@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".WhisperingListFragment">
-
+    <!--C - 귓속말 리스트-->
     <!--G - 귓속말-->
 
     <RelativeLayout

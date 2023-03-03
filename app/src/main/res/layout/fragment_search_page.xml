@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SearchPageFragment">
-
+    <!-- C - 탐색-->
     <!--G - 탐색-->
     <RelativeLayout
         android:layout_width="match_parent"
