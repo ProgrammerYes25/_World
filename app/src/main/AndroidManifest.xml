@@ -12,10 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme._World">
 
-        <meta-data
-            android:name="com.google.android.actions"
-            android:resource="@xml/back_et_mymsgbox" />
-
+<!--        <meta-data
+            android:name="com.google.android.actions" />
+ &lt;!&ndash;       android:resource="@xml/back_et_mymsgbox"&ndash;&gt;-->
         <activity
             android:name=".MyNoticeActivity"
             android:exported="false">
@@ -34,22 +33,8 @@
             android:name=".GroupListPageActivity"
             android:exported="false" />
         <activity
-            android:name=".GroupNoticeFragment"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".WritingPageActivity"
             android:exported="true" />
-        <activity
-            android:name=".MypageModifyFragment"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">
