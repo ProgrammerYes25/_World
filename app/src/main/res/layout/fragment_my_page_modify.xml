@@ -66,7 +66,7 @@
                 android:padding="3dp"
                 android:textColor="@color/black"
                 android:text="@string/my_name_text"
-                android:textSize="15dp"/>
+                android:textSize="15dp" />
 
             <EditText
                 android:id="@+id/name_edit_text"
@@ -77,8 +77,9 @@
                 android:padding="3dp"
                 android:background="@color/black_200"
                 android:textColor="@color/black"
-                android:text="@string/my_name_text"
-                android:textSize="15dp"/>
+                android:hint="@string/my_name_text"
+                android:textSize="15dp"
+                android:maxLength="10"/>
 
             <!-- Y - 나이 -->
             <TextView
@@ -103,8 +104,9 @@
                 android:padding="3dp"
                 android:background="@color/black_200"
                 android:textColor="@color/black"
-                android:text="00"
-                android:textSize="15dp"/>
+                android:hint="00"
+                android:textSize="15dp"
+                android:maxLength="3"/>
 
             <!-- Y - 관심사 -->
             <TextView
@@ -129,8 +131,9 @@
                 android:padding="3dp"
                 android:background="@color/black_200"
                 android:textColor="@color/black"
-                android:text="없음"
-                android:textSize="15dp"/>
+                android:hint="없음"
+                android:textSize="15dp"
+                android:maxLength="10"/>
 
             <!-- Y - 성별 -->
            <TextView
@@ -177,12 +180,13 @@
                     android:layout_marginTop="3dp" />
 
                 <EditText
-
+                    android:id="@+id/my_profile_edit_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
-                    android:text="안녕하세요"
-                    android:textSize="13dp" />
+                    android:hint="안녕하세요"
+                    android:textSize="13dp"
+                    android:maxLength="150"/>
             </RelativeLayout>
         </RelativeLayout>
     </LinearLayout>
