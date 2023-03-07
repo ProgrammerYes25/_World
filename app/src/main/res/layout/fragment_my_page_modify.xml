@@ -34,7 +34,9 @@
             android:padding="3dp"
             android:background="@color/black_200"
             android:textColor="@color/black"
-            android:text="@string/my_profile_modify"/>
+            android:text="@string/my_profile_modify"
+            android:clickable="true"
+            android:focusable="true"/>
     </RelativeLayout>
 
     <LinearLayout
@@ -164,6 +166,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/interest_text_view"
                 android:layout_marginTop="10dp"
+                android:layout_marginStart="3dp"
                 android:textColor="@color/black"
                 android:text="@string/my_pr_text" />
 
@@ -175,7 +178,7 @@
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="85dp"
+                    android:layout_height="79dp"
                     android:background="@color/black_200"
                     android:layout_marginTop="3dp" />
 
@@ -185,8 +188,11 @@
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
                     android:hint="안녕하세요"
-                    android:textSize="13dp"
-                    android:maxLength="150"/>
+                    android:textSize="15dp"
+                    android:maxLength="150"
+                    android:background="@null"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="3dp"/>
             </RelativeLayout>
         </RelativeLayout>
     </LinearLayout>
@@ -211,6 +217,7 @@
 
         <!-- Y - 전체보기 -->
         <TextView
+            android:id="@+id/all_view_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
