@@ -22,6 +22,7 @@
 
         <!-- Y - MY 알림(미선택) -->
         <TextView
+            android:id="@+id/my_notice_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20sp"
@@ -31,6 +32,7 @@
 
         <!-- Y - 모두 지우기 -->
         <TextView
+            android:id="@+id/all_remove_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
