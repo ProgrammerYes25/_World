@@ -33,9 +33,6 @@
             android:name=".GroupListPageActivity"
             android:exported="false" />
         <activity
-            android:name=".WritingPageActivity"
-            android:exported="true" />
-        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
